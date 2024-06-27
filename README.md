@@ -9,8 +9,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 This repository contains test results for TrenchBoot project for the following
 mainboards:
 
--
+- TO BE ADDED
 
+<!--
 The `boards` directory contains the current test results retrieved from the
 [Dasharo Test & Feature Matrix](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=736501945)
 sheet.
@@ -20,7 +21,8 @@ iterations of the test sheets and is preserved here for historical purposes.
 
 ## Links
 
-- [Dasharo Test Specification](https://docs.dasharo.com/unified-test-documentation/overview/)
+- [TrenchBoot Test Specification](TBD)
+-->
 
 ## Funding
 
