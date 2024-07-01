@@ -9,20 +9,13 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 This repository contains test results for TrenchBoot project for the following
 mainboards:
 
-- TO BE ADDED
+The `boards` directory contains the current test results for specified board
 
-<!--
-The `boards` directory contains the current test results retrieved from the
-[Dasharo Test & Feature Matrix](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=736501945)
-sheet.
-
-The `archive` section contains archival test results retrieved from previous
-iterations of the test sheets and is preserved here for historical purposes.
+* [APU](./boards/APU/) - results for different PC Engines APU boards
 
 ## Links
 
-- [TrenchBoot Test Specification](TBD)
--->
+[Test Cases](./test-cases/) - contains test scenarios and cases
 
 ## Funding
 
