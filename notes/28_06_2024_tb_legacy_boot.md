@@ -20,17 +20,17 @@ Resources used:
    - Landing Zone (LZ) - today known as SKL
      - [recipe](https://gitlab.com/trenchboot1/3mdeb/meta-trenchboot/-/blob/49183efa4818987c7067ea4b35c3c25a9309b486/dynamic-layers/openembedded-layer/recipes-support/landing-zone/landing-zone_0.3.0.bb)
      - [code revision](https://github.com/TrenchBoot/landing-zone/commit/4dc904bf70d6913a5706bdfc6f7781a9ff039d38)
-  - GRUB
-    - [recipe](https://gitlab.com/trenchboot1/3mdeb/meta-trenchboot/-/blob/49183efa4818987c7067ea4b35c3c25a9309b486/dynamic-layers/openembedded-layer/recipes-bsp/grub/grub-tb_git.bb)
-    - [code revision](https://github.com/3mdeb/grub2/tree/d6fa0d1f92446243e34e009361470f5730869ee9)
-  - Linux
-    - [recipe](https://gitlab.com/trenchboot1/3mdeb/meta-trenchboot/-/blob/49183efa4818987c7067ea4b35c3c25a9309b486/dynamic-layers/openembedded-layer/recipes-kernel/linux/linux-tb_5.5.bb)
-    - [code revision](https://github.com/TrenchBoot/linux/tree/eed5cdf480ee3761d18294d64ac7e2184229b51c)
+   - GRUB
+     - [recipe](https://gitlab.com/trenchboot1/3mdeb/meta-trenchboot/-/blob/49183efa4818987c7067ea4b35c3c25a9309b486/dynamic-layers/openembedded-layer/recipes-bsp/grub/grub-tb_git.bb)
+     - [code revision](https://github.com/3mdeb/grub2/tree/d6fa0d1f92446243e34e009361470f5730869ee9)
+   - Linux
+     - [recipe](https://gitlab.com/trenchboot1/3mdeb/meta-trenchboot/-/blob/49183efa4818987c7067ea4b35c3c25a9309b486/dynamic-layers/openembedded-layer/recipes-kernel/linux/linux-tb_5.5.bb)
+     - [code revision](https://github.com/TrenchBoot/linux/tree/eed5cdf480ee3761d18294d64ac7e2184229b51c)
 
 ## Building image
 
-1. Notes from building, although no need to do it - prebuild version
-  [available here](https://cloud.3mdeb.com/index.php/s/P8sxp9LQjFZNNDk). 
+Notes from building, although no need to do it - prebuild version
+[available here](https://cloud.3mdeb.com/index.php/s/P8sxp9LQjFZNNDk).
 
 ```
 wget https://raw.githubusercontent.com/siemens/kas/2.1.1/kas-docker
@@ -51,7 +51,7 @@ Image has been started on the PC Engines APU2 platform with
 
 ### Booting
 
-Boot log can be available [here](../logs/28_06_2024_tb_legacy_boot.log).
+Boot log is available [here](../logs/28_06_2024_tb_legacy_boot.log).
 
 ### PCRs
 
@@ -73,7 +73,7 @@ Result:
 a67681a54c9e46ae39316d7cb2c983d052f8190478b916224420dd5a719d358f  SHA256
 ```
 
-2. Exeucted on the APU2:
+2. Executed on the APU2:
 
 ```
 root@tb:~# tpm2_pcrlist
@@ -129,7 +129,9 @@ sha256 :
   23 : 0000000000000000000000000000000000000000000000000000000000000000
 ```
 
-SHA256 hash of PCR17 mathes to the pre-calculated one.
+SHA256 hash of PCR17 matches to the pre-calculated one.
 SHA1 does not.
 In the [blog post](https://blog.3mdeb.com/2020/2020-08-13-trenchboot-event-log/)
-both of them used to match.
+both of them used to match. This is not something that we are likely going to
+fix right now. Some discussion regarding this difference can be found
+[here](https://github.com/TrenchBoot/test-results/pull/2#discussion_r1659104263).
