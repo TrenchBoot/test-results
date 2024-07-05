@@ -1,0 +1,31 @@
+Test name,APU2C
+UEFI boot works,PASS
+Legacy boot works,PASS
+`boot` menuentry boots into OS,PASS
+`slaunch-boot` menuentry boots into OS,PASS
+`/boot/grub/grub.cfg` exists,PASS
+`/boot/EFI/BOOT/grub.cfg` exists,PASS
+`/boot/grub/grub.cfg` and `/boot/EFI/BOOT/grub.cfg` are the same,PASS
+`grub.cfg` contains slaunch,PASS
+/boot/acm/ADL_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/BDW_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/CFL_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/CMLSTGP_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/CML_RKL_S_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/CML_S_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/RKLS_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/SKL_KBL_AML_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/SNB_IVB_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/acm/TGL_SINIT*.bin exists and is used in grub.cfg,PASS
+/boot/skl.bin exists and is used in grub.cfg,PASS
+tpm2_tools package is installed,PASS
+rsync command is installed,PASS
+Kernel has booted with no critical errors,FAIL
+Kernel has booted with no errors,FAIL
+"Kernel config ""TCG_TPM"" set to ""y""",PASS
+"Kernel config ""TCG_TIS"" set to ""y""",PASS
+"Kernel config ""TCG_TIS_CORE"" set to ""y""",PASS
+At least one PCR bank is active,PASS
+PCRs 0..23 from active PCR banks can be read,PASS
+PCR 17 doesn't contain only `0`s or only `F`s,FAIL
+PCR 18 doesn't contain only `0`s or only `F`s,FAIL

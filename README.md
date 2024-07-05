@@ -9,18 +9,15 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 This repository contains test results for TrenchBoot project for the following
 mainboards:
 
--
+The `boards` directory contains the current test results for specified board
 
-The `boards` directory contains the current test results retrieved from the
-[Dasharo Test & Feature Matrix](https://docs.google.com/spreadsheets/d/1wSE6xA3K3nXewwLn5lV39_2wZL1kg5AkGb4mvmG3bwE/edit#gid=736501945)
-sheet.
-
-The `archive` section contains archival test results retrieved from previous
-iterations of the test sheets and is preserved here for historical purposes.
+* [APU](./boards/APU/) - results for different PC Engines APU boards
 
 ## Links
 
-- [Dasharo Test Specification](https://docs.dasharo.com/unified-test-documentation/overview/)
+* [Test cases](./test-cases/) - contains test scenarios and cases
+* [Cukinia](https://github.com/3mdeb/meta-trenchboot/blob/master/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf)
+\- Test cases implemented in cukinia
 
 ## Funding
 
