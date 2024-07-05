@@ -16,7 +16,7 @@ The `boards` directory contains the current test results for specified board
 ## Links
 
 * [Test cases](./test-cases/) - contains test scenarios and cases
-* [Cukinia](https://github.com/3mdeb/meta-trenchboot/blob/8b4812d8577c57b2ee9d1b6bf6898b84bb863fe5/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf)
+* [Cukinia](https://github.com/3mdeb/meta-trenchboot/blob/12c72a937484adb40cd14fa60d12eb1392e72e9f/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf)
 \- Test cases implemented in cukinia
 
 ## Funding

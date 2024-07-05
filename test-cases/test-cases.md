@@ -1,7 +1,7 @@
 # Test cases
 
 Some of the test cases below are implemented in
-[cukinia](https://github.com/3mdeb/meta-trenchboot/blob/8b4812d8577c57b2ee9d1b6bf6898b84bb863fe5/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf).
+[cukinia](https://github.com/3mdeb/meta-trenchboot/blob/12c72a937484adb40cd14fa60d12eb1392e72e9f/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf).
 Currently, those are tests 5 through 14.
 
 1. UEFI boot works - TrenchBoot boots into OS
