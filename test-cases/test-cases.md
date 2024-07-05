@@ -1,8 +1,8 @@
 # Test cases
 
 Some of the test cases below are implemented in
-[cukinia](https://github.com/3mdeb/meta-trenchboot/blob/12c72a937484adb40cd14fa60d12eb1392e72e9f/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf).
-Currently, those are tests 5 through 14.
+[cukinia](https://github.com/3mdeb/meta-trenchboot/blob/54122834f9ea9d9fb9c9c1fef0072f439fa44b89/recipes-tests/trenchboot-tests/trenchboot-tests/cukinia.conf).
+Currently, those are tests 5 through 15.
 
 1. UEFI boot works - TrenchBoot boots into OS
 2. Legacy boot works - TrenchBoot boots into OS
@@ -29,8 +29,12 @@ Currently, those are tests 5 through 14.
 12. `rsync` is installed - check if `rsync` is installed
 13. Kernel boots without critical errors
 14. Kernel boots without errors
-15. There is at least one active PCR bank - check if there is at least one
+15. Kernel is properly configured - kernel config options are set to `y`
+    - TCG_TPM
+    - TCG_TIS
+    - TCG_TIS_CORE
+16. There is at least one active PCR bank - check if there is at least one
 directory: `/sys/class/tpm/tpm0/pcr-sha*`
-16. PCRs 0 to 23 can be read from `/sys/class/tpm/tpm0/pcr-sha*`
-17. When booting with slaunch PCR 17 & 18 shouldn't contain only `0`s or only
+17. PCRs 0 to 23 can be read from `/sys/class/tpm/tpm0/pcr-sha*`
+18. When booting with slaunch PCR 17 & 18 shouldn't contain only `0`s or only
 `F`s
